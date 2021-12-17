@@ -1,0 +1,226 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #D91B5C;
+    overflow:hidden;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    margin:auto;
+    max-width: 100%;
+    overflow:hidden;
+}
+
+header .logo {
+    color: white;
+    font-size: 30px;
+    margin-left: 1em;
+    line-height: 100px;
+    float: left;
+}
+
+header nav {
+    float: right;
+    line-height: 100px;
+    margin-right: 1em;
+}
+
+header nav a {
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size:20px;
+    font-weight:bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover {
+    background: rgb(153, 167, 153);
+    border-radius: 50px;
+}
+
+section {
+    margin-bottom: 1em;
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: darkslategrey;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0.5em;
+}
+
+
+.card-title {
+    margin-top: 1em;
+    color: rgb(240, 165, 0);
+}
+
+.card-text {
+    text-align: justify;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.card .card-body {
+    background: white;
+}
+
+article {
+    border-top: #24303c;
+    padding: 0.5em 0.5em;
+    font-size: 14px;
+    text-align:center;
+}
+
+article h2 {
+    color: rgb(240, 165, 0);
+}
+
+.carousel-inner #actividades {
+    opacity: 0.5;
+}
+
+p {
+    color: black;
+    justify-content: center;
+    font-style: normal;
+}
+
+.animacionTexto {
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.animacionBoton {
+    padding: 0.5em 0.5em;
+}
+
+.img-fluid {
+    border:#24303c;
+    padding:10px;
+    background-color: #D91B5C;
+}
+
+.contenedor-form {
+    background: #0075d9;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contenedor-form h2 {
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+    color:rgb(31, 31, 30);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    justify-content: center;
+}
+
+.contenedor-form .toggle {
+    top: 7px;
+    right: 7px;
+    width: 100%;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #24303c;
+    border-bottom: 2px solid #24303c;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+span {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-form .toogle:hover {
+    border-top:2px solid rgb(240, 165, 0);
+    border-bottom: 2px solid rgb(240, 165, 0);
+}
+
+.contenedor-form input[type="text"] {
+    outline: none;
+    display: block;
+    width: 100%; 
+    padding: 10px 15px;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #c51f7a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+
+.contenedor-form input[type="submit"] {
+    background: white;
+    color: black;
+    border: none;
+    width: 100%; 
+    align-items: center;
+    padding: 10px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor:pointer;
+    transition: 2s;
+}
+
+.contenedor-form input[type="submit"]:hover {
+    background: orange;
+}
+
+
+@media screen and (max-width: 950px) {
+    header .logo,
+    header nav {
+        width: 100%;
+        text-align:center;
+        line-height:100px;
+    }
+}
+
+h4 {
+    margin-left: 0.5em;
+    padding: 0.5em 0.5em
+}
+
